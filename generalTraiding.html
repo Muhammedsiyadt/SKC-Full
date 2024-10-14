@@ -74,31 +74,16 @@
             object-fit: contain;
         }
 
-        .service-item {
-            transition: transform 0.3s;
-        }
-
-        .service-item:hover {
-            transform: scale(1.05);
-        }
-
-        .client-logo {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 10px;
-        }
-
-        /* CSS for consistent logo container size and logo adjustment */
         .srv {
-            background-color: #36b6d3;
+            background-color: #bde9f3;
             padding: 10px;
             height: 150px;
+            /* Fixed height for uniformity */
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             transition: background-color 0.3s ease, box-shadow 0.3s ease;
-            /* Added transition */
         }
 
         .srv:hover {
@@ -106,31 +91,37 @@
             background-color: #00ddff;
         }
 
-
-
-
         .logo-container {
-            width: 150px;
-            /* Fixed size for the logo container */
+            width: 100%;
+            /* Set to 100% to occupy full width */
+            max-width: 150px;
+            /* Maintain maximum width for larger screens */
             height: 100px;
+            /* Fixed height for logos */
             display: flex;
             align-items: center;
             justify-content: center;
+            overflow: hidden;
+            /* Prevents overflow of images */
         }
 
         .client-logo {
             max-width: 100%;
+            /* Ensure logos scale within their container */
             max-height: 100%;
+            /* Prevent logos from exceeding the height */
             object-fit: contain;
-            /* Ensures logo fits inside without distortion */
+            /* Maintain aspect ratio */
+            transition: transform 0.3s;
+            /* Transition for hover effect */
         }
 
-        h5 {
-            font-size: 1.2rem;
-            margin-top: 10px;
+        .srv:hover .client-logo {
+            transform: scale(1.1);
+            /* Slight zoom effect on hover */
         }
 
-        /* Responsive layout */
+        /* Additional styles for responsive design */
         .container-fluid {
             padding: 20px;
         }
@@ -325,7 +316,7 @@
             </div>
             <div class="row g-4 justify-content-center">
                 <!-- Client 1 -->
-                <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="col-md-4 col-lg-4 col-xl-3">
                     <div class="srv  text-center">
                         <div class="logo-container">
                             <img src="img/SKC/BOOSKALIS.svg" alt="BOOSKALIS" class="client-logo">
@@ -333,7 +324,7 @@
                     </div>
                 </div>
                 <!-- Client 2 -->
-                <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="col-md-4 col-lg-4 col-xl-3">
                     <div class="srv  text-center">
                         <div class="logo-container">
                             <img src="img/SKC/HYUNDAI.png" alt="HYUNDAI" class="client-logo">
@@ -341,7 +332,7 @@
                     </div>
                 </div>
                 <!-- Client 3 -->
-                <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="col-md-4 col-lg-4 col-xl-3">
                     <div class="srv  text-center">
                         <div class="logo-container">
                             <img src="img/SKC/SAMSUNG.svg" alt="SAMSUNG" class="client-logo">
@@ -350,7 +341,7 @@
                     </div>
                 </div>
                 <!-- Additional Clients -->
-                <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="col-md-4 col-lg-4 col-xl-3">
                     <div class="srv  text-center">
                         <div class="logo-container">
                             <img src="img/SKC/GLOBAL SOURCES.svg" alt="CLIENT NAME" class="client-logo">
@@ -358,7 +349,7 @@
                         <!-- <h5 class="mt-4"><b>GLOBAL SOURCES</b></h5> -->
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="col-md-4 col-lg-4 col-xl-3">
                     <div class="srv  text-center">
                         <div class="logo-container">
                             <img src="img/SKC/KANOOZ.png" alt="CLIENT NAME" class="client-logo">
@@ -366,7 +357,7 @@
                         <!-- <h5 class="mt-4"><b>KANOOZ</b></h5> -->
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="col-md-4 col-lg-4 col-xl-3">
                     <div class="srv  text-center">
                         <div class="logo-container">
                             <img src="img/SKC/AYTB.png" alt="CLIENT NAME" class="client-logo">
@@ -374,7 +365,7 @@
                         <!-- <h5 class="mt-4"><b>AYTB</b></h5> -->
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="col-md-4 col-lg-4 col-xl-3">
                     <div class="srv  text-center">
                         <div class="logo-container">
                             <img src="img/SKC/DSV.svg" alt="CLIENT NAME" class="client-logo">
@@ -382,7 +373,7 @@
                         <!-- <h5 class="mt-4"><b>DSV</b></h5> -->
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="col-md-4 col-lg-4 col-xl-3">
                     <div class="srv  text-center">
                         <div class="logo-container">
                             <img src="img/SKC/DHL.svg" alt="CLIENT NAME" class="client-logo">
@@ -390,7 +381,7 @@
                         <!-- <h5 class="mt-4"><b>DHL</b></h5> -->
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="col-md-4 col-lg-4 col-xl-3">
                     <div class="srv  text-center">
                         <div class="logo-container">
                             <img src="img/SKC/NAMMA CARGO.png" alt="CLIENT NAME" class="client-logo">
@@ -398,7 +389,7 @@
                         <!-- <h5 class="mt-4"><b>NAMMA CARGO</b></h5> -->
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="col-md-4 col-lg-4 col-xl-3">
                     <div class="srv  text-center">
                         <div class="logo-container">
                             <img src="img/SKC/AL AMARA INTERNATIONAL.png" alt="CLIENT NAME" class="client-logo">
@@ -406,7 +397,7 @@
                         <!-- <h5 class="mt-4"><b>AL AMARA INTERNATIONAL</b></h5> -->
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="col-md-4 col-lg-4 col-xl-3">
                     <div class="srv  text-center">
                         <div class="logo-container">
                             <img src="img/SKC/AAMCO.jpeg" alt="CLIENT NAME" class="client-logo">
@@ -414,7 +405,7 @@
                         <!-- <h5 class="mt-4"><b>AAMCO</b></h5> -->
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="col-md-4 col-lg-4 col-xl-3">
                     <div class="srv  text-center">
                         <div class="logo-container">
                             <img src="img/SKC/AZMEEL.png" alt="CLIENT NAME" class="client-logo">
@@ -430,7 +421,7 @@
                         <h5 class="mt-4"><b>UTC</b></h5>
                     </div>
                 </div> -->
-                <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="col-md-4 col-lg-4 col-xl-3">
                     <div class="srv  text-center">
                         <div class="logo-container">
                             <img src="img/SKC/VAN OORD.svg" alt="CLIENT NAME" class="client-logo">
