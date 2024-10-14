@@ -41,25 +41,133 @@
             width: 100%;
             height: 200px;
             overflow: hidden;
-            position: relative; /* Necessary for the shadow effect */
-            transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+            position: relative;
+            /* Necessary for the shadow effect */
+            transition: transform 0.3s, box-shadow 0.3s;
+            /* Smooth transition */
         }
-    
+
         .feature-icon:hover {
-            transform: scale(1.05); /* Slightly scale the image */
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Smooth shadow effect */
+            transform: scale(1.05);
+            /* Slightly scale the image */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            /* Smooth shadow effect */
         }
-    
+
         .feature-icon img {
             border: rgba(192, 196, 196, 0.226) 1px solid;
             max-width: 100%;
             height: 100%;
             object-fit: cover;
-            transition: transform 0.5s; /* Smooth transition for the image */
+            transition: transform 0.5s;
+            /* Smooth transition for the image */
         }
-    
+
         .feature-icon:hover img {
-            transform: scale(1.1); /* Slightly scale the image on hover */
+            transform: scale(1.1);
+            /* Slightly scale the image on hover */
+        }
+
+        .client-logo {
+            max-width: 150px;
+            max-height: 80px;
+            object-fit: contain;
+        }
+
+        .service-item {
+            transition: transform 0.3s;
+        }
+
+        .service-item:hover {
+            transform: scale(1.05);
+        }
+
+        .client-logo {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        /* CSS for consistent logo container size and logo adjustment */
+        .srv {
+            background-color: #1bc6ed9f;
+            padding: 10px;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            /* Added transition */
+        }
+
+        .srv:hover {
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+            background-color: #d5d5d5;
+        }
+
+
+
+
+        .logo-container {
+            width: 150px;
+            /* Fixed size for the logo container */
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .client-logo {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            /* Ensures logo fits inside without distortion */
+        }
+
+        h5 {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        /* Responsive layout */
+        .container-fluid {
+            padding: 20px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .col-md-6,
+        .col-lg-4,
+        .col-xl-3 {
+            flex: 0 0 calc(25% - 20px);
+            max-width: calc(25% - 20px);
+        }
+
+        @media (max-width: 1200px) {
+            .col-xl-3 {
+                flex: 0 0 calc(33.333% - 20px);
+                max-width: calc(33.333% - 20px);
+            }
+        }
+
+        @media (max-width: 992px) {
+            .col-lg-4 {
+                flex: 0 0 calc(50% - 20px);
+                max-width: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 576px) {
+            .col-md-6 {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
         }
     </style>
 </head>
@@ -144,7 +252,7 @@
 
 
     <!-- Services Start -->
-    
+
     <!-- Services End -->
 
 
@@ -183,7 +291,7 @@
                     </div>
                 </div>
             </div>
-            
+
         </div>
     </div>
 
@@ -193,7 +301,7 @@
 
     <div class="full-width-div mb-4">
         <div class="line-one">
-            <div class="item">Electrical</div>| 
+            <div class="item">Electrical</div>|
             <div class="item">Mechanical</div>|
             <div class="item">Instrumental</div>|
             <div class="item">Steel Structures</div>
@@ -204,61 +312,136 @@
         </div>
     </div>
 
+
     <div class="container-fluid service py-5">
         <div class="container py-5">
-            <div class="section-title mb-5 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="section-title mb-5">
                 <div class="sub-style">
                     <h4 class="sub-title px-3 mb-0">Our Partners</h4>
                 </div>
                 <h1 class="display-3 mb-4">Our Valued Clients</h1>
-                <p class="mb-0">We proudly serve a diverse range of clients across various industries. Our commitment to excellence ensures that we meet their unique needs and challenges.</p>
+                <p class="mb-0">We proudly serve a diverse range of clients across various industries. Our commitment to
+                    excellence ensures that we meet their unique needs and challenges.</p>
             </div>
             <div class="row g-4 justify-content-center">
-                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item rounded">
-                        <div class="service-content rounded-bottom bg-light p-4">
-                            <div class="service-content-inner">
-                                <h5 class="mb-4">Client 1</h5>
-                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta inventore cum accusamus, dolor qui ullam.</p>
-                            </div>
+                <!-- Client 1 -->
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="srv  text-center">
+                        <div class="logo-container">
+                            <img src="img/SKC/BOOSKALIS.svg" alt="BOOSKALIS" class="client-logo">
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="service-item rounded">
-                        <div class="service-content rounded-bottom bg-light p-4">
-                            <div class="service-content-inner">
-                                <h5 class="mb-4">Client 2</h5>
-                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta inventore cum accusamus, dolor qui ullam.</p>
-                            </div>
+                <!-- Client 2 -->
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="srv  text-center">
+                        <div class="logo-container">
+                            <img src="img/SKC/HYUNDAI.png" alt="HYUNDAI" class="client-logo">
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="1.1s">
-                    <div class="service-item rounded">
-                        <div class="service-content rounded-bottom bg-light p-4">
-                            <div class="service-content-inner">
-                                <h5 class="mb-4">Client 3</h5>
-                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta inventore cum accusamus, dolor qui ullam.</p>
-                            </div>
+                <!-- Client 3 -->
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="srv  text-center">
+                        <div class="logo-container">
+                            <img src="img/SKC/SAMSUNG.svg" alt="SAMSUNG" class="client-logo">
                         </div>
+                        <!-- <h5 class="mt-4"><b>SAMSUNG</b></h5> -->
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="1.1s">
-                    <div class="service-item rounded">
-                        <div class="service-content rounded-bottom bg-light p-4">
-                            <div class="service-content-inner">
-                                <h5 class="mb-4">Client 3</h5>
-                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta inventore cum accusamus, dolor qui ullam.</p>
-                            </div>
+                <!-- Additional Clients -->
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="srv  text-center">
+                        <div class="logo-container">
+                            <img src="img/SKC/GLOBAL SOURCES.svg" alt="CLIENT NAME" class="client-logo">
                         </div>
+                        <!-- <h5 class="mt-4"><b>GLOBAL SOURCES</b></h5> -->
                     </div>
                 </div>
-                
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="srv  text-center">
+                        <div class="logo-container">
+                            <img src="img/SKC/KANOOZ.png" alt="CLIENT NAME" class="client-logo">
+                        </div>
+                        <!-- <h5 class="mt-4"><b>KANOOZ</b></h5> -->
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="srv  text-center">
+                        <div class="logo-container">
+                            <img src="img/SKC/AYTB.png" alt="CLIENT NAME" class="client-logo">
+                        </div>
+                        <!-- <h5 class="mt-4"><b>AYTB</b></h5> -->
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="srv  text-center">
+                        <div class="logo-container">
+                            <img src="img/SKC/DSV.svg" alt="CLIENT NAME" class="client-logo">
+                        </div>
+                        <!-- <h5 class="mt-4"><b>DSV</b></h5> -->
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="srv  text-center">
+                        <div class="logo-container">
+                            <img src="img/SKC/DHL.svg" alt="CLIENT NAME" class="client-logo">
+                        </div>
+                        <!-- <h5 class="mt-4"><b>DHL</b></h5> -->
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="srv  text-center">
+                        <div class="logo-container">
+                            <img src="img/SKC/NAMMA CARGO.png" alt="CLIENT NAME" class="client-logo">
+                        </div>
+                        <!-- <h5 class="mt-4"><b>NAMMA CARGO</b></h5> -->
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="srv  text-center">
+                        <div class="logo-container">
+                            <img src="img/SKC/AL AMARA INTERNATIONAL.png" alt="CLIENT NAME" class="client-logo">
+                        </div>
+                        <!-- <h5 class="mt-4"><b>AL AMARA INTERNATIONAL</b></h5> -->
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="srv  text-center">
+                        <div class="logo-container">
+                            <img src="img/SKC/AAMCO.jpeg" alt="CLIENT NAME" class="client-logo">
+                        </div>
+                        <!-- <h5 class="mt-4"><b>AAMCO</b></h5> -->
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="srv  text-center">
+                        <div class="logo-container">
+                            <img src="img/SKC/AZMEEL.png" alt="CLIENT NAME" class="client-logo">
+                        </div>
+                        <!-- <h5 class="mt-4"><b>AZMEEL</b></h5> -->
+                    </div>
+                </div>
+                <!-- <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="srv  text-center">
+                        <div class="logo-container">
+                            <img src="path/to/logo/another-client-logo.png" alt="CLIENT NAME" class="client-logo">
+                        </div>
+                        <h5 class="mt-4"><b>UTC</b></h5>
+                    </div>
+                </div> -->
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="srv  text-center">
+                        <div class="logo-container">
+                            <img src="img/SKC/VAN OORD.svg" alt="CLIENT NAME" class="client-logo">
+                        </div>
+                        <!-- <h5 class="mt-4"><b>VAN OORD</b></h5> -->
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    
+
 
 
     <!-- Footer Start -->
@@ -303,7 +486,7 @@
                         <a href=""><i class="fas fa-angle-right me-2"></i> Warehouse Racking</a>
                         <a href=""><i class="fas fa-angle-right me-2"></i> Kitchen Equipment</a>
                         <a href=""><i class="fas fa-angle-right me-2"></i> Bakery Equipment</a>
-                        
+
                         <a href=""><i class="fas fa-angle-right me-2"></i> General Trading</a>
                         <a href=""><i class="fas fa-angle-right me-2"></i> Industrial Support</a>
                     </div>
@@ -312,7 +495,7 @@
                     <div class="footer-item d-flex flex-column">
                         <h4 class="mb-4 text-white">Qatar</h4>
                         <!-- <b class=" text-primary"></b> -->
-                        <a  href="">SKC Refrigeration & Equipment Trading</a>
+                        <a href="">SKC Refrigeration & Equipment Trading</a>
                         <a href=""><i class="fa fa-map-marker-alt me-2"></i> 2nd Floor, Block 6, Arkan Building, The
                             Commercial Avenue, Doha, Qatar.</a>
                         <a href=""><i class="fas fa-envelope me-2"></i> info@skcmiddleeast.com</a>
@@ -325,15 +508,16 @@
                     <div class="footer-item d-flex flex-column">
                         <h4 class="mb-4 text-white">Soudi Arabia</h4>
                         <!-- <b class=" text-primary"></b> -->
-                        <a  href="">Yousef Al-Shebini Trading & Contracting</a>
-                        <a href=""><i class="fa fa-map-marker-alt me-2"></i> P.O.Box 1976, AL Jubail-31951 Safa Street, Kingdom Of Saudi Arabia</a>
+                        <a href="">Yousef Al-Shebini Trading & Contracting</a>
+                        <a href=""><i class="fa fa-map-marker-alt me-2"></i> P.O.Box 1976, AL Jubail-31951 Safa Street,
+                            Kingdom Of Saudi Arabia</a>
                         <a href=""><i class="fas fa-envelope me-2"></i> info@skcmiddleeast.com</a>
                         <!-- <a href=""><i class="fas fa-phone me-2"></i> <b>Tel : </b> +97444769976 </a>
                         <a href=""><i class="fas fa-phone me-2"></i> <b>Fax : </b> +974769900</a> -->
                         <a href=""><i class="fas fa-phone me-2"></i> <b>Mob : </b> +966550017415, +966540345178</a>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </div>
