@@ -24,7 +24,6 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap; /* Wraps items if necessary */
-    margin: 10px 0;
 }
 
 .item {
