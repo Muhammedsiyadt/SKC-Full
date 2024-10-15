@@ -14,9 +14,9 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 20px;
+    padding: 30px;
     color: #ffffff;
-    background-color: #e90606; /* Change as needed */
+    background-color: #06bfe9; /* Change as needed */
     width: 100%;
 }
 
@@ -568,7 +568,7 @@
 
 .service .service-item:hover .service-img::before {
     height: 100%;
-    background: rgba(21, 185, 217, .3);
+    background: rgba(3, 199, 238, 0.112);
 }
 
 .service .service-item .service-img:hover img {
@@ -590,13 +590,13 @@
     left: 0;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    background: rgba(21, 185, 217, .5);
+    background: rgb(2, 202, 242);
     transition: 0.5s;
     z-index: 3;
 }
 
 .service .service-item:hover .service-content::before {
-    background: rgba(21, 185, 217, .5);
+    background: rgb(0, 213, 255);
     height: 100%;
 }
 
@@ -612,7 +612,12 @@
 }
 .service .service-item:hover .service-content .service-content-inner h5 {
     /* color: var(--bs-secondary); */
-    color: #0019bb;
+    color: #000000;
+}
+
+.service .service-item:hover .service-content .service-content-inner p {
+    /* color: var(--bs-secondary); */
+    color: #ffffff;
 }
 
 /*** Service End ***/
@@ -701,7 +706,7 @@
 
 /*** Appointment Start ***/
 .appointment {
-    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../img/SKC/Supermarket.jpg);
+    background: linear-gradient(rgb(244, 243, 243), rgb(255, 255, 255));
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -724,6 +729,7 @@
 .video {
     position: relative;
 }
+
 
 .video .btn-play {
     position: absolute;
